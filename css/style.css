@@ -1,0 +1,231 @@
+a ,nav{
+  color: white;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Arimo', sans-serif;
+  font-size: 1 em;
+  background-color: #333;
+}
+
+nav{
+  
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: green;
+}
+.logo{
+  float: right;
+  padding:0;
+  margin: 0;
+  padding-right: 20px;
+}
+.site-logo{
+  width: 26px;
+  height: 26px;
+  padding:14px 16px;
+  margin-bottom: -15px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.header{
+  margin: 0;
+  position: 0;
+  min-width: 100%;
+ 
+}
+
+.cover {
+  background-color: green;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.messi{
+  padding-top: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-h1{
+  font-family: 'Arimo', sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 4em;
+}
+
+.title-h1-fans{
+  font-family: 'Arimo', sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 3em;
+padding-top: 44px;
+color: white;
+  animation-name: example;
+  animation-duration: 4s;
+}
+@keyframes example {
+  from {color: purple transparent;}
+  to {color: blue;}
+}
+
+
+.title-h2{
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+
+.content{
+  padding-top:90px;
+  padding-bottom: 70px;
+  background-image: url(/img/bg.jpg);
+  background-size: cover;
+ color: white; 
+ font-family: 'Arimo', sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+}
+.messi-info{
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: bold;
+}
+
+.text-fans{
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: bold;
+  color: white; 
+ font-family: 'Arimo', sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.date-msg{
+  font-family: 'Arimo', sans-serif;
+  text-align: left;
+  font-size: 1.2em;
+  padding-left: 15px;
+  font-weight: bold;
+  color: white; 
+}
+.date-name{
+  font-family: 'Arimo', sans-serif;
+  text-align: right;
+  font-size: 1.2em;
+  padding-right: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.form-send{
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+article{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+}
+
+.victory{
+  background-color:green;
+  opacity:0;
+}
+.last-victory{
+  color: white; 
+ font-family: 'Arimo', sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.my-footer{
+  background-color: #333;
+  color: white; 
+ font-family: 'Arimo', sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  margin:0;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+nav a:hover, .dropdown:hover .dropbtn {
+  background-color: green;
+  animation-name: animatemenu;
+  animation-duration: 4s;
+}
+@keyframes animatemenu {
+  0%   {background-color: orange;}
+  25%  {background-color: purple;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-weight: bold;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+nav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
