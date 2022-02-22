@@ -12,6 +12,9 @@ function myFunction() {
   document.getElementById("myBtn").addEventListener("click", function() {
   let textEl = document.getElementById("my-txt");
   let d = document.getElementById("fan-msg");
+  if(d===""){
+    alert("Please,write some message")
+  }
       d.innerHTML = `${textEl.value}`;  
       textEl.value = "";
   let dataEl = document.getElementById("msg-data");
