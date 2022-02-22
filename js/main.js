@@ -15,6 +15,7 @@ function myFunction() {
       d.innerHTML = `${textEl.value}`;  
       if(textEl.value == ""){
         alert("Please,write some message");
+        dataEl.innerHTML ="";
       }
       textEl.value = "";
   let dataEl = document.getElementById("msg-data");
