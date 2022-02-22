@@ -12,10 +12,10 @@ function myFunction() {
   document.getElementById("myBtn").addEventListener("click", function() {
   let textEl = document.getElementById("my-txt");
   let d = document.getElementById("fan-msg");
-  if(d===""){
-    alert("Please,write some message")
-  }
       d.innerHTML = `${textEl.value}`;  
+      if(textEl.value == ""){
+        alert("Please,write some message");
+      }
       textEl.value = "";
   let dataEl = document.getElementById("msg-data");
   let today = new Date();
