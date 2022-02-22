@@ -16,6 +16,6 @@ function myFunction() {
       textEl.value = "";
   let dataEl = document.getElementById("msg-data");
   let today = new Date();
-  let msgDate = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+  let msgDate = today.getDate() +'-'+(today.getMonth()+1)+'-'+today.getFullYear();
   dataEl.innerHTML = msgDate;
   });
