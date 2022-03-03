@@ -12,14 +12,14 @@ function myFunction() {
   document.getElementById("myBtn").addEventListener("click", function() {
   let textEl = document.getElementById("my-txt");
   let d = document.getElementById("fan-msg");
-      d.innerHTML = `${textEl.value}`;  
+      d.innerHTML += `<p>${textEl.value}</p><br>`;  
+      let dataEl = document.getElementById("msg-data");
+  let today = new Date();
+  let msgDate = today.getDate() +'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+  dataEl.innerHTML += msgDate +`<hr><br>`;
       if(textEl.value == ""){
         alert("Please,write some message");
         dataEl.innerHTML ="";
       }
       textEl.value = "";
-  let dataEl = document.getElementById("msg-data");
-  let today = new Date();
-  let msgDate = today.getDate() +'-'+(today.getMonth()+1)+'-'+today.getFullYear();
-  dataEl.innerHTML = msgDate;
   });
