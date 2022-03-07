@@ -12,7 +12,7 @@ function myFunction() {
   document.getElementById("myBtn").addEventListener("click", function() {
   let textEl = document.getElementById("my-txt");
   let d = document.getElementById("fan-msg");
-      d.innerHTML += `<p>${textEl.value}</p><br>`;  
+      d.innerAdjacentHTML('afterend','<p>${textEl.value}</p><br>');  
       let dataEl = document.getElementById("msg-data");
   let today = new Date();
   let msgDate = today.getDate() +'-'+(today.getMonth()+1)+'-'+today.getFullYear();
