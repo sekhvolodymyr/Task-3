@@ -11,12 +11,14 @@ function myFunction() {
   
   document.getElementById("myBtn").addEventListener("click", function() {
   let textEl = document.getElementById("my-txt");
-  let d = document.getElementById("fan-msg");
-      d.innerAdjacentHTML += `<p>${textEl.value}</p><br>`;  
-      let dataEl = document.getElementById("msg-data");
+  let d = document.getElementById("block-msg");
+  let dataEl = document.getElementById("block-msg");
   let today = new Date();
   let msgDate = today.getDate() +'-'+(today.getMonth()+1)+'-'+today.getFullYear();
-  dataEl.innerHTML += msgDate +`<hr><br>`;
+
+      d.innerHTML += `<div class ="text-fans">${textEl.value}</div><br>`;  
+      dataEl.innerHTML += `<div class = "date-msg">${msgDate}</div><br>`;
+    
       if(textEl.value == ""){
         alert("Please,write some message");
         dataEl.innerHTML ="";
