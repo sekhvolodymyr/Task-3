@@ -17,7 +17,7 @@ function myFunction() {
   let msgDate = today.getDate() +'-'+(today.getMonth()+1)+'-'+today.getFullYear();
 
       d.innerHTML += `<div class ="text-fans">${textEl.value}</div><br>`;  
-      dataEl.innerHTML += `<div class = "date-msg">${msgDate}</div><br>`;
+      dataEl.innerHTML += `<div class = "date-msg">${msgDate}</div><br><hr>`;
     
       if(textEl.value == ""){
         alert("Please,write some message");

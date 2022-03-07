@@ -17,7 +17,7 @@ document.getElementById("myBtn").addEventListener("click", function () {
   var today = new Date();
   var msgDate = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
   d.innerHTML += "<div class =\"text-fans\">".concat(textEl.value, "</div><br>");
-  dataEl.innerHTML += "<div class = \"date-msg\">".concat(msgDate, "</div><br>");
+  dataEl.innerHTML += "<div class = \"date-msg\">".concat(msgDate, "</div><br><hr>");
 
   if (textEl.value == "") {
     alert("Please,write some message");
